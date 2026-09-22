@@ -1,0 +1,16 @@
+title: NPM3D Datasets & Benchmarks
+description: Public datasets and archived benchmarks for 3D point-cloud research from the NPM3D group at Mines Paris – PSL.
+url: "https://npm3d.github.io"
+baseurl: ""
+lang: en
+markdown: kramdown
+permalink: pretty
+
+group_url: "https://www.caor.minesparis.psl.eu/presentation/point-cloud-and-3d-modeling/"
+legacy_url: "https://npm3d.fr"
+
+exclude:
+  - README.md
+  - MIGRATION.md
+  - benchmark/BENCHMARK_RECOVERY.md
+  - CNAME.example

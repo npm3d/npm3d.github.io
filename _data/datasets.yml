@@ -1,0 +1,47 @@
+- slug: paris-lille-3d
+  title: Paris-Lille-3D
+  year: 2018
+  path: /paris-lille-3d/
+  summary: Large-scale, fully annotated urban mobile-laser-scanning point clouds acquired in Paris and Lille.
+  tags: [MLS, semantic segmentation, urban]
+  image: https://npm3d.fr/storage/pages/August2018/Paris_Lille_3D_GT7.jpg
+
+- slug: kitti-carla
+  title: KITTI-CARLA
+  year: 2021
+  path: /kitti-carla/
+  summary: A KITTI-like synthetic dataset generated in CARLA with LiDAR and camera sensors matched to the KITTI platform.
+  tags: [CARLA, LiDAR, camera, domain transfer]
+  image: https://npm3d.fr/storage/pages/September2021/town01_lidar.jpg
+
+- slug: paris-carla-3d
+  title: Paris-CARLA-3D
+  year: 2021
+  path: /paris-carla-3d/
+  summary: Paired real and synthetic outdoor point-cloud data for semantic/instance segmentation and scene completion.
+  tags: [CARLA, real-to-synthetic, mapping]
+  image: https://npm3d.fr/storage/pages/November2021/soufflot.jpg
+
+- slug: coins-riedones3d
+  title: Riedones3D
+  year: 2021
+  path: /coins-riedones3d/
+  summary: 2,207 3D Celtic coin scans for pattern registration and fine-grained die clustering.
+  tags: [cultural heritage, registration, clustering]
+  image: https://npm3d.fr/storage/pages/February2022/catcheye.png
+
+- slug: simkitti32
+  title: SimKITTI32
+  year: 2022
+  path: /simkitti32/
+  summary: Simulated Velodyne HDL-32 scans in a SemanticKITTI-derived virtual scene for LiDAR sensor-domain generalization.
+  tags: [LiDAR simulation, SemanticKITTI, domain generalization]
+  image: https://npm3d.fr/storage/pages/December2022/remotesensing-14-06262-g014_v2.png
+
+- slug: parisluco3d
+  title: ParisLuco3D
+  year: 2023
+  path: /parisluco3d/
+  summary: A high-quality target dataset designed for cross-domain evaluation of LiDAR perception.
+  tags: [LiDAR, domain generalization, autonomous driving]
+  image: https://npm3d.fr/storage/pages/November2023/1800_modified.png

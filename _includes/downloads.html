@@ -1,0 +1,14 @@
+{% assign items = site.data.downloads[include.key] %}
+<div class="download-grid">
+{% for item in items %}
+  <div class="download-card">
+    <strong>{{ item.label }}</strong>
+    {% if item.url != "" %}
+      <a class="button" href="{{ item.url }}">Download</a>
+    {% else %}
+      <span class="button disabled" title="Add the Cloud Mines URL in _data/downloads.yml">Cloud link to add</span>
+    {% endif %}
+    {% if item.note %}<small>{{ item.note }}</small>{% endif %}
+  </div>
+{% endfor %}
+</div>

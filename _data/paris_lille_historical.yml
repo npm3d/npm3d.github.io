@@ -1,0 +1,38 @@
+# Historical reference methods repeatedly reported for Paris-Lille-3D in the
+# literature. They are kept separate from the verified 2026 legacy-site result
+# pages so no current rank is inferred.
+- method: SPH3D-GCN
+  miou: 70.1
+  ground: 99.4
+  building: 95.0
+  pole: 65.4
+  bollard: 71.5
+  trash: 22.8
+  barrier: 43.2
+  pedestrian: 48.9
+  car: 95.2
+  natural: 89.3
+
+- method: HDGCN
+  miou: 68.3
+  ground: 99.4
+  building: 93.0
+  pole: 67.7
+  bollard: 75.7
+  trash: 25.7
+  barrier: 44.7
+  pedestrian: 37.1
+  car: 81.9
+  natural: 89.6
+
+- method: RF_MSSF
+  miou: 56.3
+  ground: 99.3
+  building: 88.6
+  pole: 47.8
+  bollard: 67.3
+  trash: 2.3
+  barrier: 27.1
+  pedestrian: 20.6
+  car: 74.8
+  natural: 78.8

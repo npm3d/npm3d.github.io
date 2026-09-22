@@ -1,0 +1,47 @@
+# Replace TODO URLs with permanent public Cloud Mines links.
+# Keeping all download URLs here avoids editing the dataset pages later.
+
+paris_lille_3d:
+  - label: Training data
+    url: ""
+    note: "TODO: Cloud Mines link. Include the 50-class manual annotations."
+  - label: Benchmark test data
+    url: ""
+    note: "TODO: Cloud Mines link."
+  - label: Test ground truth
+    url: ""
+    note: "TODO: publish the formerly hidden benchmark annotations."
+  - label: Raw MLS data
+    url: ""
+    note: "TODO: Cloud Mines link."
+
+kitti_carla:
+  - label: KITTI-CARLA dataset
+    url: ""
+    note: "TODO: Cloud Mines link to the corrected dataset released in December 2021."
+
+paris_carla_3d:
+  - label: Paris-CARLA-3D dataset
+    url: ""
+    note: "TODO: Cloud Mines link."
+
+riedones3d:
+  - label: Full Riedones3D dataset
+    url: ""
+    note: "TODO: Cloud Mines link replacing the legacy NAKALA URL."
+  - label: Registration benchmark
+    url: "https://cloud.mines-paristech.fr/index.php/s/AVhOXp54IVGYLTM"
+    note: "Existing public Cloud Mines link from the legacy NPM3D page."
+  - label: Clustering benchmark
+    url: "https://cloud.mines-paristech.fr/index.php/s/Fhq8CJTrAOrMTAI"
+    note: "Existing public Cloud Mines link from the legacy NPM3D page."
+
+simkitti32:
+  - label: SimKITTI32 dataset
+    url: ""
+    note: "TODO: Cloud Mines link."
+
+parisluco3d:
+  - label: ParisLuco3D dataset
+    url: ""
+    note: "TODO: Cloud Mines link, including the ground-truth scans and evaluation scripts."
