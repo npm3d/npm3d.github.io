@@ -4,48 +4,51 @@ title: Home
 description: NPM3D public datasets and archived benchmarks for 3D point-cloud research.
 permalink: /
 ---
-<section class="home-hero">
+<section class="home-hero welcome-hero">
   <div>
     <span class="eyebrow">Mines Paris – PSL · 3D Point Cloud and Modeling</span>
-    <h1>Open 3D datasets.<br><span>Long-term access.</span></h1>
-    <p class="lede">NPM3D provides research datasets for large-scale point clouds, LiDAR perception, simulation, domain generalization, registration and cultural-heritage 3D analysis.</p>
+    <h1>NPM3D<br><span>Datasets &amp; Benchmarks</span></h1>
+    <p class="lede">A permanent public archive of research datasets for large-scale point clouds, LiDAR perception, simulation, domain generalization, registration and 3D cultural heritage.</p>
     <div class="hero-actions">
-      <a class="button primary" href="#datasets">Browse datasets</a>
-      <a class="button" href="/paris-lille-3d/#archived-benchmark">Archived benchmark</a>
+      <a class="button primary" href="#dataset-menu">Choose a dataset</a>
+      <a class="button" href="{{ '/paris-lille-3d/#archived-benchmark' | relative_url }}">Paris-Lille-3D benchmark</a>
     </div>
   </div>
-  <aside class="hero-panel">
-    <span class="eyebrow">Static research archive</span>
-    <strong>6 datasets</strong>
-    <p>No account, no benchmark server, no dynamic backend. Data downloads are intended to be hosted on permanent public Cloud Mines links.</p>
-    <p><small>The former online benchmarks are being preserved as frozen, reproducible result tables.</small></p>
+
+  <aside class="hero-panel welcome-panel">
+    <span class="eyebrow">Research archive</span>
+    <strong>6 public datasets</strong>
+    <p>Each dataset now has its own dedicated page with description, download links, citation, code links when available, and archived benchmark information.</p>
+    <p><small>No account or dynamic benchmark server is required.</small></p>
   </aside>
 </section>
 
-<section id="datasets">
+<section id="dataset-menu" class="dataset-menu-section">
   <div class="section-head">
-    <div><span class="eyebrow">Datasets</span><h2>NPM3D collection</h2></div>
-    <p>From urban MLS and autonomous-driving LiDAR to simulated sensor domains and 3D cultural heritage.</p>
+    <div>
+      <span class="eyebrow">Dataset menu</span>
+      <h2>Choose a dataset</h2>
+    </div>
+    <p>Select a dataset to open its dedicated page.</p>
   </div>
-  <div class="dataset-grid">
+
+  <nav class="home-dataset-menu" aria-label="Dataset pages">
   {% for dataset in site.data.datasets %}
-    <article class="dataset-card">
-      <a href="{{ dataset.path }}"><img src="{{ dataset.image }}" alt="{{ dataset.title }} preview" loading="lazy"></a>
-      <div class="dataset-card-body">
-        <span class="eyebrow">{{ dataset.year }}</span>
-        <h3><a href="{{ dataset.path }}">{{ dataset.title }}</a></h3>
-        <p>{{ dataset.summary }}</p>
-        <div class="tags">{% for tag in dataset.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</div>
-      </div>
-    </article>
+    <a class="home-dataset-link" href="{{ dataset.path | relative_url }}">
+      <span>
+        <strong>{{ dataset.title }}</strong>
+        <small>{{ dataset.summary }}</small>
+      </span>
+      <span class="dataset-year">{{ dataset.year }}</span>
+    </a>
   {% endfor %}
-  </div>
+  </nav>
 </section>
 
-<section class="prose">
+<section class="prose home-about">
 ## About NPM3D
 
-**NPM3D** stands for *Nuage de Points et Modélisation 3D* (“3D Point Cloud and Modeling”). This static site replaces the former dynamic benchmark portal with a low-maintenance public archive. Dataset descriptions, citations and historical benchmark results remain online, while large files can be served from the institutional Cloud Mines infrastructure.
+**NPM3D** stands for *Nuage de Points et Modélisation 3D* (“3D Point Cloud and Modeling”). This static website replaces the former dynamic benchmark portal with a low-maintenance public archive. Dataset descriptions, citations and historical benchmark results remain available, while large files can be served from the institutional Cloud Mines infrastructure.
 
 The NPM3D research group is part of the Centre for Robotics at Mines Paris – PSL. [Research group ↗]({{ site.group_url }})
 </section>

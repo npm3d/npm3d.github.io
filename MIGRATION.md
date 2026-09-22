@@ -53,3 +53,8 @@ Once the GitHub version is validated, the existing domain can be pointed at GitH
 - `/parisluco3d/`
 
 Do not create a `CNAME` file until you actually want to attach the custom domain.
+
+## GitHub Pages root URL
+
+The repository must be named `npm3d.github.io`, not `npm3d`, if the desired public URL is `https://npm3d.github.io/`.
+The Jekyll configuration intentionally uses an empty `baseurl` because this is a GitHub user site, not a project site.

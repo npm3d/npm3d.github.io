@@ -4,10 +4,25 @@
       <span class="brand-mark">NPM3D</span>
       <span class="brand-sub">Datasets &amp; Benchmarks</span>
     </a>
+
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+
     <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
-      <a href="{{ '/#datasets' | relative_url }}">Datasets</a>
-      <a href="{{ '/paris-lille-3d/#archived-benchmark' | relative_url }}">Paris-Lille-3D benchmark</a>
+      <a href="{{ '/' | relative_url }}">Home</a>
+
+      <details class="nav-dropdown">
+        <summary>Datasets</summary>
+        <div class="dropdown-panel">
+          {% for dataset in site.data.datasets %}
+          <a href="{{ dataset.path | relative_url }}">
+            <span>{{ dataset.title }}</span>
+            <small>{{ dataset.year }}</small>
+          </a>
+          {% endfor %}
+        </div>
+      </details>
+
+      <a href="{{ '/paris-lille-3d/#archived-benchmark' | relative_url }}">Archived benchmark</a>
       <a href="{{ site.group_url }}">Research group ↗</a>
     </nav>
   </div>
