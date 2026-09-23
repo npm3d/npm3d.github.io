@@ -1,0 +1,54 @@
+name: Fetch legacy NPM3D images
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-images:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Download NPM3D illustrations
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets/images
+
+          curl -fL --retry 4 'https://npm3d.fr/storage/pages/August2018/Paris_Lille_3D_GT7.jpg' \
+            -o assets/images/paris-lille-3d.jpg
+
+          curl -fL --retry 4 'https://npm3d.fr/storage/pages/September2021/town01_lidar.jpg' \
+            -o assets/images/kitti-carla.jpg
+
+          curl -fL --retry 4 'https://npm3d.fr/storage/pages/November2021/soufflot.jpg' \
+            -o assets/images/paris-carla-3d.jpg
+
+          curl -fL --retry 4 'https://npm3d.fr/storage/pages/February2022/catcheye.png' \
+            -o assets/images/riedones3d.png
+
+          curl -fL --retry 4 'https://npm3d.fr/storage/pages/December2022/remotesensing-14-06262-g014_v2.png' \
+            -o assets/images/simkitti32.png
+
+          curl -fL --retry 4 'https://npm3d.fr/storage/pages/November2023/1800_modified.png' \
+            -o assets/images/parisluco3d.png
+
+      - name: Commit images to repository
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/images
+
+          if git diff --cached --quiet; then
+            echo 'Images are already present and unchanged.'
+            exit 0
+          fi
+
+          git commit -m 'Archive NPM3D dataset illustrations'
+          git push
