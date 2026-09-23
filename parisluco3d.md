@@ -3,13 +3,14 @@ layout: default
 title: ParisLuco3D
 dataset_year: 2023
 lede: A high-quality target dataset designed for cross-domain evaluation and domain generalization of LiDAR perception.
-hero_image: https://npm3d.fr/storage/pages/November2023/1800_modified.png
+hero_image: /assets/images/parisluco3d.png
+legacy_hero_image: https://npm3d.fr/storage/pages/November2023/1800_modified.png
 hero_alt: ParisLuco3D LiDAR point cloud
 paper: https://arxiv.org/abs/2310.16542
 permalink: /parisluco3d/
 ---
 {% include dataset_hero.html %}
-<div class="prose">
+<div class="prose" markdown="1">
 
 ## Overview
 
@@ -25,19 +26,25 @@ The original NPM3D portal linked an online CodaLab semantic-segmentation benchma
 The legacy page states that the following table was last edited in **December 2023**.
 
 ### SemanticKITTI → ParisLuco3D · 19 classes
+<div class="table-scroll" markdown="1">
 | Method | Source mIoU | ParisLuco3D mIoU | Reference |
 |---|---:|---:|---|
 | SRUNet + RayDrop trained on SemanticKITTI | 61.7 | 37.0 | [ParisLuco3D](https://arxiv.org/abs/2310.16542) |
+</div>
 
 ### nuScenes → ParisLuco3D · 16 classes
+<div class="table-scroll" markdown="1">
 | Method | Source mIoU | ParisLuco3D mIoU | Reference |
 |---|---:|---:|---|
 | SRUNet + IBN-Net trained on nuScenes | 67.3 | 35.6 | [ParisLuco3D](https://arxiv.org/abs/2310.16542) |
+</div>
 
 ### COLA multi-source → ParisLuco3D · 7 classes
+<div class="table-scroll" markdown="1">
 | Method | ParisLuco3D mIoU | Reference |
 |---|---:|---|
 | Cylinder3D trained on SemanticKITTI + nuScenes + KITTI-360 + Waymo | 68.3 | [COLA](https://arxiv.org/abs/2311.03017) |
+</div>
 
 The old portal contained “to appear soon” placeholders for LiDAR object detection and tracking but no result tables; those placeholders are not presented as active benchmarks here.
 

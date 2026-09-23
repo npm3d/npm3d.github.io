@@ -46,13 +46,13 @@ The six dataset pages are generated at:
 - `/simkitti32/`
 - `/parisluco3d/`
 
-The home page contains only the welcome information and a dataset menu; each dataset has its own dedicated page.
+The home page contains a short welcome section and a compact dataset menu; each dataset has its own dedicated page.
 
 ## What to edit first
 
 - `_data/downloads.yml` — Cloud Mines download URLs.
 - `benchmark/BENCHMARK_RECOVERY.md` — one final check of the Paris-Lille-3D ranking before decommissioning the legacy server.
-- `MIGRATION.md` — copy legacy illustrations locally before `npm3d.fr` is shut down.
+- `MIGRATION.md` — archive the six legacy illustrations locally before `npm3d.fr` is shut down.
 
 ## Site architecture
 

@@ -7,7 +7,6 @@ markdown: kramdown
 permalink: pretty
 
 group_url: "https://www.caor.minesparis.psl.eu/presentation/point-cloud-and-3d-modeling/"
-legacy_url: "https://npm3d.fr"
 
 exclude:
   - README.md

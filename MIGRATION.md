@@ -18,20 +18,19 @@ Edit only:
 
 Replace each empty `url: ""` by the permanent public Cloud Mines URL. The pages automatically turn “Cloud link to add” into active Download buttons.
 
-## 3. Make the old illustrations independent from npm3d.fr
+## 3. Archive the old illustrations locally
 
-The first preview deliberately references the current `npm3d.fr/storage/...` images, so the site works immediately. Before switching off the legacy server, copy those assets into this repository and change `_data/datasets.yml` plus each page's `hero_image:` to local paths.
+The dataset pages are already configured to use local files under `assets/images/`. While the local copies are missing, the browser temporarily falls back to the legacy `npm3d.fr` image URLs.
 
-Suggested target files:
+To archive the exact six illustrations, either run:
 
-- `assets/images/paris-lille-3d.jpg`
-- `assets/images/kitti-carla.jpg`
-- `assets/images/paris-carla-3d.jpg`
-- `assets/images/riedones3d.png`
-- `assets/images/simkitti32.png`
-- `assets/images/parisluco3d.png`
+```bash
+./scripts/fetch_legacy_images.sh
+```
 
-Legacy source URLs are documented in `_data/datasets.yml`.
+or open **Actions → Fetch legacy NPM3D images → Run workflow** in GitHub. The workflow downloads and commits the six source images into the repository and requests a GitHub Pages rebuild.
+
+After those files are committed and GitHub Pages has rebuilt, the illustrations no longer depend on `npm3d.fr`.
 
 ## 4. Complete the Paris-Lille-3D ranking archive
 

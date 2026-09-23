@@ -3,14 +3,15 @@ layout: default
 title: Paris-Lille-3D
 dataset_year: 2018
 lede: A large, high-quality, fully hand-annotated urban mobile-laser-scanning dataset for point-cloud semantic segmentation and classification.
-hero_image: https://npm3d.fr/storage/pages/August2018/Paris_Lille_3D_GT7.jpg
+hero_image: /assets/images/paris-lille-3d.jpg
+legacy_hero_image: https://npm3d.fr/storage/pages/August2018/Paris_Lille_3D_GT7.jpg
 hero_alt: Paris-Lille-3D point cloud with semantic labels
 paper: https://doi.org/10.1177/0278364918767506
 permalink: /paris-lille-3d/
 ---
 {% include dataset_hero.html %}
 
-<div class="prose">
+<div class="prose" markdown="1">
 
 <div class="stats">
   <div class="stat"><strong>143.1 M</strong><span>3D points</span></div>

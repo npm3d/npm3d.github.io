@@ -3,13 +3,14 @@ layout: default
 title: SimKITTI32
 dataset_year: 2022
 lede: A simulated Velodyne HDL-32 dataset inside a SemanticKITTI-derived virtual environment for studying LiDAR sensor-domain generalization.
-hero_image: https://npm3d.fr/storage/pages/December2022/remotesensing-14-06262-g014_v2.png
+hero_image: /assets/images/simkitti32.png
+legacy_hero_image: https://npm3d.fr/storage/pages/December2022/remotesensing-14-06262-g014_v2.png
 hero_alt: SimKITTI32 LiDAR simulation
 paper: https://doi.org/10.3390/rs14246262
 permalink: /simkitti32/
 ---
 {% include dataset_hero.html %}
-<div class="prose">
+<div class="prose" markdown="1">
 
 ## Overview
 

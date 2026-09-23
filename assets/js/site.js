@@ -6,3 +6,15 @@ if (button && nav) {
     button.setAttribute('aria-expanded', String(open));
   });
 }
+
+
+// During migration, use the legacy image only if a local copy is not yet present.
+document.querySelectorAll('img[data-fallback-src]').forEach((img) => {
+  img.addEventListener('error', () => {
+    const fallback = img.dataset.fallbackSrc;
+    if (fallback && img.src !== fallback) {
+      img.removeAttribute('data-fallback-src');
+      img.src = fallback;
+    }
+  }, { once: true });
+});

@@ -11,7 +11,7 @@
   </div>
   {% if page.hero_image %}
   <figure class="hero-media">
-    <img src="{{ page.hero_image }}" alt="{{ page.hero_alt | default: page.title }}" loading="eager">
+    <img src="{{ page.hero_image | relative_url }}"{% if page.legacy_hero_image %} data-fallback-src="{{ page.legacy_hero_image }}"{% endif %} alt="{{ page.hero_alt | default: page.title }}" loading="eager">
   </figure>
   {% endif %}
 </section>

@@ -3,14 +3,15 @@ layout: default
 title: Paris-CARLA-3D
 dataset_year: 2021
 lede: Real and synthetic dense outdoor point clouds designed for challenging 3D mapping tasks and synthetic-to-real transfer.
-hero_image: https://npm3d.fr/storage/pages/November2021/soufflot.jpg
+hero_image: /assets/images/paris-carla-3d.jpg
+legacy_hero_image: https://npm3d.fr/storage/pages/November2021/soufflot.jpg
 hero_alt: Paris-CARLA-3D semantically annotated Paris point cloud
 paper: https://doi.org/10.3390/rs13224713
 code: https://github.com/jedeschaud/paris_carla_simulator
 permalink: /paris-carla-3d/
 ---
 {% include dataset_hero.html %}
-<div class="prose">
+<div class="prose" markdown="1">
 
 <div class="stats">
   <div class="stat"><strong>~700 M</strong><span>synthetic points</span></div>
@@ -37,28 +38,36 @@ These tables preserve the results published on the original NPM3D page. The benc
 
 ### Supervised semantic segmentation on Paris
 
+<div class="table-scroll" markdown="1">
 | Method | Overall mIoU | S0 mIoU | S3 mIoU | Reference |
 |---|---:|---:|---:|---|
 | KPConv | 51.7 | 45.2 | 62.9 | [Paper](https://arxiv.org/abs/1904.08889) |
 | PointNet++ | 19.9 | 13.9 | 25.8 | [Paper](https://arxiv.org/abs/1706.02413) |
+</div>
 
 ### Unsupervised domain adaptation: CARLA → Paris
 
+<div class="table-scroll" markdown="1">
 | Method | Overall mIoU | S0 mIoU | S3 mIoU | Reference |
 |---|---:|---:|---:|---|
 | KPConv (source only) | 19.2 | 20.6 | 17.7 | [Paper](https://arxiv.org/abs/1904.08889) |
+</div>
 
 ### Supervised instance segmentation
 
+<div class="table-scroll" markdown="1">
 | Method | SM | PQ | mIoU | Reference |
 |---|---:|---:|---:|---|
 | KPConv + Mathematical Morphology | 55.3 | 38.4 | 44.2 | [Paris-CARLA-3D paper](https://doi.org/10.3390/rs13224713) |
+</div>
 
 ### Scene completion
 
+<div class="table-scroll" markdown="1">
 | Method | Chamfer distance | Reference |
 |---|---:|---|
 | SG-NN with Hoppe TSDF | 7.5 cm | [Paris-CARLA-3D paper](https://doi.org/10.3390/rs13224713) |
+</div>
 
 The legacy page announced full-scene completion and novel-view-synthesis benchmarks as “to appear soon”; no archived results were published there, so those placeholder sections are omitted from this static version.
 

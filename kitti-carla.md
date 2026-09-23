@@ -3,14 +3,15 @@ layout: default
 title: KITTI-CARLA
 dataset_year: 2021
 lede: A KITTI-like synthetic dataset generated in CARLA with a Velodyne HDL-64 and stereo-style color cameras placed to match the KITTI sensor platform.
-hero_image: https://npm3d.fr/storage/pages/September2021/town01_lidar.jpg
+hero_image: /assets/images/kitti-carla.jpg
+legacy_hero_image: https://npm3d.fr/storage/pages/September2021/town01_lidar.jpg
 hero_alt: KITTI-CARLA simulated LiDAR point cloud
 paper: https://arxiv.org/abs/2109.00892
 code: https://github.com/jedeschaud/kitti_carla_simulator
 permalink: /kitti-carla/
 ---
 {% include dataset_hero.html %}
-<div class="prose">
+<div class="prose" markdown="1">
 
 <div class="stats">
   <div class="stat"><strong>7</strong><span>CARLA maps / sequences</span></div>

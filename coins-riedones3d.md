@@ -3,14 +3,15 @@ layout: default
 title: Riedones3D
 dataset_year: 2021
 lede: A collection of 2,207 3D Celtic coin scans for pattern registration and fine-grained coin-die clustering.
-hero_image: https://npm3d.fr/storage/pages/February2022/catcheye.png
+hero_image: /assets/images/riedones3d.png
+legacy_hero_image: https://npm3d.fr/storage/pages/February2022/catcheye.png
 hero_alt: Riedones3D Celtic coin scans
 paper: https://arxiv.org/abs/2109.15033
 code: https://github.com/humanpose1/riedones3d
 permalink: /coins-riedones3d/
 ---
 {% include dataset_hero.html %}
-<div class="prose">
+<div class="prose" markdown="1">
 
 <div class="stats">
   <div class="stat"><strong>2,207</strong><span>3D coin scans</span></div>
