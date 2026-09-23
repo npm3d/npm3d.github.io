@@ -12,7 +12,7 @@ permalink: /
   </div>
 
   <aside class="hero-panel welcome-panel">
-    <strong>6 public datasets</strong>
+    <strong>6 public 3D Vision datasets</strong>
     <p>Dataset descriptions, downloads, citations, code links when available, and benchmark results are preserved on dedicated pages.</p>
     <p><small>No account or dynamic benchmark server is required.</small></p>
   </aside>
